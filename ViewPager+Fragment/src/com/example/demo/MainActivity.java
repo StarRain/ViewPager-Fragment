@@ -129,4 +129,5 @@ public class MainActivity extends FragmentActivity {
 			return mFragments.size();
 		}
 	}
+	
 }
