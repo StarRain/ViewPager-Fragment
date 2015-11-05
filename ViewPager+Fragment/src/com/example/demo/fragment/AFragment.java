@@ -30,17 +30,17 @@ public class AFragment extends Fragment {
 	private void initView(View view) {
 		mTextView = (TextView) view.findViewById(R.id.text_a);
 		// 气泡
-		mBadgeView = new BadgeView(getActivity(), mTextView);
-		mBadgeView.setText("99+");
-		mBadgeView.setBadgeBackgroundColor(Color.RED);
-		mBadgeView.setBadgePosition(BadgeView.POSITION_TOP_RIGHT);
-		mBadgeView.setBadgeMargin(10, 10);
-		mBadgeView.show();
+		mBadgeView = new BadgeView(getActivity(), mTextView); // 初始化气泡，并指定目标组件
+		mBadgeView.setText("99+");// 设置气泡显示的内容
+		mBadgeView.setBadgeBackgroundColor(Color.RED);// 设置气泡颜色
+		mBadgeView.setBadgePosition(BadgeView.POSITION_TOP_RIGHT); // 设置气泡位置
+		mBadgeView.setBadgeMargin(10, 10); // 设置气泡的外边距
+		mBadgeView.show();// 显示气泡
 		
 		// 标签
-		mLabelView = new LabelView(getActivity());
-		mLabelView.setText("Top");
-		mLabelView.setBackgroundColor(Color.RED);
-		mLabelView.setTargetView(mTextView, 5, Gravity.LEFT_TOP);
+		mLabelView = new LabelView(getActivity());// 初始化标签
+		mLabelView.setText("Top");// 设置标签显示的内容
+		mLabelView.setBackgroundColor(Color.RED);// 设置标签颜色
+		mLabelView.setTargetView(mTextView, 5, Gravity.LEFT_TOP);// 设置目标组件，距离和位置
 	}
 }
