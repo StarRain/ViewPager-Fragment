@@ -112,17 +112,6 @@ public class MainActivity extends FragmentActivity {
 			}
 		}
 	}
-
-//	private void replaceFragment(Fragment fragment) {
-//		try {
-//			final FragmentManager fm = getSupportFragmentManager();
-//			final FragmentTransaction ft = fm.beginTransaction();
-//			ft.replace(R.id.fragment_container, fragment);
-//			ft.commitAllowingStateLoss();
-//		} catch (Exception e) {
-//			Log.e("MainActivity", "replaceFragment", e);
-//		}
-//	}
 	
 	class ABCViewPagerAdapter extends FragmentPagerAdapter{
 
